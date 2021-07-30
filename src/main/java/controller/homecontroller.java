@@ -59,7 +59,7 @@ public class homecontroller {
 			
 		Class.forName("com.mysql.jdbc.Driver");
 		//Connection con=DriverManager.getConnection("jdbc:mysql://aa1y1ghile0p7t1.cv2uqxokjyuy.us-east-1.rds.amazonaws.com:3306/learnersacademy","root","rootraja");
-		Connection con=DriverManager.getConnection("jdbc:mysql://awsdb.c1dzwtudyvfv.us-east-2.rds.amazonaws.com:3306/learnersacademy","root","rootraja");
+		Connection con=DriverManager.getConnection("jdbc:mysql://awsdb.cg2a3l4mwr3i.ap-south-1.rds.amazonaws.com:3306/learnersacademy","root","rootraja");
 		PreparedStatement ps=con.prepareStatement("update teacherstable set Teachersname='"+teachername+"' where Id='"+id+"'");
 		ps.executeUpdate();
 		res.sendRedirect("AssignTeachers.jsp");
@@ -80,7 +80,7 @@ public class homecontroller {
 			
 		Class.forName("com.mysql.jdbc.Driver");
 		//Connection con=DriverManager.getConnection("jdbc:mysql://aa1y1ghile0p7t1.cv2uqxokjyuy.us-east-1.rds.amazonaws.com:3306/learnersacademy","root","rootraja");
-		Connection con=DriverManager.getConnection("jdbc:mysql://awsdb.c1dzwtudyvfv.us-east-2.rds.amazonaws.com:3306/learnersacademy","root","rootraja");
+		Connection con=DriverManager.getConnection("jdbc:mysql://awsdb.cg2a3l4mwr3i.ap-south-1.rds.amazonaws.com:3306/learnersacademy","root","rootraja");
 		PreparedStatement ps=con.prepareStatement("update teacherstable set Classes='"+classname+"' where Id='"+id+"'");
 		ps.executeUpdate();
 		res.sendRedirect("AssignClasses.jsp");

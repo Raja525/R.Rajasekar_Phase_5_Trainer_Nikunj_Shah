@@ -94,7 +94,7 @@ font-family:"Montserrat",Sans-serif;
 		<%
 		Class.forName("com.mysql.jdbc.Driver");
 		//Connection con=DriverManager.getConnection("jdbc:mysql://aa1y1ghile0p7t1.cv2uqxokjyuy.us-east-1.rds.amazonaws.com:3306/learnersacademy","root","rootraja");
-		Connection con=DriverManager.getConnection("jdbc:mysql://awsdb.c1dzwtudyvfv.us-east-2.rds.amazonaws.com:3306/learnersacademy","root","rootraja");
+		Connection con=DriverManager.getConnection("jdbc:mysql://awsdb.cg2a3l4mwr3i.ap-south-1.rds.amazonaws.com:3306/learnersacademy","root","rootraja");
 		Statement st=con.createStatement();
 		ResultSet rs=st.executeQuery("select * from teacherstable");
 
